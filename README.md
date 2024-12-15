@@ -43,14 +43,14 @@ Add a password.txt file and LND config file:
 nano /temp/password.txt
 nano /temp/lnd.conf
 ```
-Add your LND password and planned LND config to those files.
+Add your LND password and planned LND config to those files. Remember to use the LND password from your old Umbrel node.  
 
 
 ### Old node (logged in as admin)
 
 Check that LND version is the same as new node
 ```shell
-licli getinfo
+lncli getinfo
 ```
 
 Open a second SSH session as admin and tail LND logs to ensure it stops:
